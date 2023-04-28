@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sts-demo"
+version = "0.1.0"
+description = ""
+authors = ["Junsun Lee <junsun1014@naver.com>"]
+readme = "README.md"
+packages = [{include = "sts_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+transformers = "^4.28.1"
+torch = "^2.0.0"
+torchmetrics = "^0.11.4"
+pytorch-lightning = "^2.0.2"
+streamlit = "^1.21.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
